@@ -82,6 +82,11 @@ body * {
   transform: translateY(-50%);
 }
 
+}
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 .light #switch button {
   left: 0;
   right: initial;
@@ -164,3 +169,21 @@ footer {
   .light {
     --bg-url: url(./assents/bg-desktop-light.jpg);
   }  
+
+/* animations */
+@keyframes slide-in {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    right: 50%;
+  }
+  to {
+    right: 0;
+  }
+}
